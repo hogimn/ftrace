@@ -25,6 +25,7 @@ echo "set_ftrace_filter enabled"
 echo 1 > /sys/kernel/debug/tracing/events/sched/sched_process_exit/enable
 echo 1 > /sys/kernel/debug/tracing/events/sched/sched_process_fork/enable
 echo 1 > /sys/kernel/debug/tracing/events/sched/sched_process_free/enable
+echo 1 > /sys/kernel/debug/tracing/events/signal/enable
 sleep 1
 echo "event enabled"
 
